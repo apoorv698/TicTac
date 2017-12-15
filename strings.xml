@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TicTak</string>
+    <string name="action_settings">Settings</string>
+    <string name="newgame">New Game</string>
+    <string name="win">Win</string>
+    <string name="draw">Draw</string>
+    <string name="loss">Loss</string>
+    <string name="endgame">End Game</string>
+    <string name="won">YOU WON!</string>
+    <string name="lost">YOU LOST!</string>
+    <string name="ydraw">Its a draw!!!</string>
+    <string name="lastmatchres">Last match result.</string>
+</resources>

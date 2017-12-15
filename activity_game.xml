@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.tictak.Game">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/game_panel"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:padding="30dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/newgame"
+            android:id="@+id/new_game"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/end_game"
+            android:text="@string/endgame"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/main_game"
+        android:padding="30dp"
+        android:layout_below="@+id/game_panel"
+        android:orientation="vertical"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:id="@+id/row1">
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:id="@+id/one"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"/>
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:id="@+id/two"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"/>
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:id="@+id/three"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:id="@+id/row2">
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:id="@+id/four"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/five"
+                android:layout_width="90dp"
+                android:layout_height="60dp" />
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"/>
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:id="@+id/six"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:id="@+id/row3">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:id="@+id/seven"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:id="@+id/eight"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:id="@+id/nine"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/main_game">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/lastmatchres"
+            android:id="@+id/result"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/win"
+            android:padding="5dp"
+            android:id="@+id/win"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wincount"
+            android:hint="0"
+            android:padding="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/draw"
+            android:id="@+id/draw"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/drawcount"
+            android:hint="0"
+            android:padding="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/loss"
+            android:id="@+id/loss"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/losscount"
+            android:hint="0"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
